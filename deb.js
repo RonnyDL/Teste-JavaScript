@@ -25,4 +25,4 @@ function validaArrays(arr, num) {
 	}
 }
 
-console.log(validaArrays([1, 2, 3], 0));
+console.log(validaArrays());
