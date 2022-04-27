@@ -1,12 +1,12 @@
 function validaArrays(arr, num) {
 	try {
-		if (!arr && !num) throw new ReferenceError('Envie os parâmetros!');
+		if (!arr && !num) throw new ReferenceError('Enviar os parâmetros!');
 
 		if (typeof arr !== 'object')
-			throw new TypeError('Envie um elemento do tipo Array!');
+			throw new TypeError('Enviar um elemento do tipo Array!');
 
 		if (typeof num !== 'number')
-			throw new TypeError('Envie um elemento do tipo Number!');
+			throw new TypeError('Enviar um elemento do tipo Number!');
 
 		if (arr.length !== num) throw new RangeError('Tamanho do array inválido!');
 
@@ -19,7 +19,7 @@ function validaArrays(arr, num) {
 			console.log('ReferenceError!');
 			console.log(e.stack);
 		} else {
-			console.log('Outro tipo de erro!');
+			console.log('Outro erro!');
 			console.log(e.stack);
 		}
 	}
